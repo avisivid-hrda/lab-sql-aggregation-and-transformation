@@ -1,4 +1,3 @@
--- CHALLENGE 1
 SELECT MIN(length) FROM film AS min_duration;
 SELECT MAX(length) FROM film AS max_duration; 
 SELECT 
@@ -51,3 +50,8 @@ FROM film
 GROUP BY rating 
 HAVING AVG(length) > 120  
 ORDER BY avg_length DESC;
+
+SELECT last_name FROM actor
+GROUP BY last_name
+HAVING COUNT(last_name) = 1;
+
